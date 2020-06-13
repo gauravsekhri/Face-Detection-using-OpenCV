@@ -1,11 +1,11 @@
 import cv2
 
 # Load the cascade
-face_cascade = cv2.CascadeClassifier(r'C:\Users\Sai Ram\Desktop\Python\Face Detection\haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
 
 
 # Read the input image
-img = cv2.imread('C:\Python\people.png')
+img = cv2.imread('people.png')
 
 # Convert into grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -22,4 +22,3 @@ cv2.imshow('img', img)
 # Display the output
 cv2.imshow('img', img)
 cv2.waitKey()
-
